@@ -8,13 +8,13 @@
 Summary:	Filesys::Notify::Simple - Simple and dumb file system watcher
 #Summary(pl.UTF-8):	
 Name:		perl-Filesys-Notify-Simple
-Version:	0.07
-Release:	2
+Version:	0.08
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Filesys/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4842ff56a79a7db0b779ce21e71bd291
+# Source0-md5:	82a1ae968a457c7dc37367ab43a97da8
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Filesys-Notify-Simple/
 BuildRequires:	perl-devel >= 1:5.8.0
