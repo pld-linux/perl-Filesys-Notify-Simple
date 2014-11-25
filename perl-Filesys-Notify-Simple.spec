@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Filesys
 %define		pnam	Notify-Simple
 %include	/usr/lib/rpm/macros.perl
 Summary:	Filesys::Notify::Simple - Simple and dumb file system watcher
-#Summary(pl.UTF-8):	
 Name:		perl-Filesys-Notify-Simple
 Version:	0.08
 Release:	1
@@ -15,12 +14,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Filesys/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	82a1ae968a457c7dc37367ab43a97da8
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Filesys-Notify-Simple/
+URL:		http://search.cpan.org/dist/Filesys-Notify-Simple/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,14 +29,9 @@ fallback to the full directory scan if they're not available.
 There are some limitations in this module. If you don't like it, use
 File::ChangeNotify.
 
-In return, this module doesn't depend on any non-core
-modules. Platform specific optimizations with Linux::Inotify2 and
-Mac::FSEvents are truely optional.
-
-
-
-# %description -l pl.UTF-8
-# TODO
+In return, this module doesn't depend on any non-core modules.
+Platform specific optimizations with Linux::Inotify2 and Mac::FSEvents
+are truely optional.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
