@@ -4,7 +4,6 @@
 
 %define		pdir	Filesys
 %define		pnam	Notify-Simple
-%include	/usr/lib/rpm/macros.perl
 Summary:	Filesys::Notify::Simple - Simple and dumb file system watcher
 Name:		perl-Filesys-Notify-Simple
 Version:	0.08
